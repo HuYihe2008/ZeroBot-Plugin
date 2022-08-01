@@ -227,6 +227,6 @@ func videoCard2msg(card Card) (msg []message.MessageSegment, err error) {
 	msg = append(msg, message.Text("播放: ", humanNum(card.Stat.View), " 弹幕: ", humanNum(card.Stat.Danmaku)))
 	msg = append(msg, message.Image(card.Pic))
 	msg = append(msg, message.Text("\n", " 点赞: ", humanNum(card.Stat.Like), " 投币: ", humanNum(card.Stat.Coin), "\n", " 收藏: ", humanNum(card.Stat.Favorite), " 分享: ", humanNum(card.Stat.Share), "\n",
-				       "分享链接：",vURL, card.BvID, "\n", "https://www.bilibili.com/video/", card.BvID))
+		"分享链接：", vURL, card.BvID, "\n", "https://www.bilibili.com/video/", card.BvID))
 	return
 }
