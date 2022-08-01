@@ -419,7 +419,7 @@ func init() { // 插件主体
 			ctx.SendChain(
 				message.Image(parsed.Playlist.CoverImgURL),
 				message.Text(
-					"歌单名称：", parsed.Playlist.Name,
+					"\n歌单名称：", parsed.Playlist.Name,
 					"\n歌单ID：", parsed.Playlist.ID,
 					"\n创建人：", parsed.Playlist.Creator.Nickname,
 					"\n创建时间：", time.Unix(parsed.Playlist.CreateTime/1000, 0).Format("2006-01-02"),
